@@ -5,7 +5,7 @@ function Persona(nombre, apellido, edad, hobbies){
 	this.edad = edad;
 	this.hobbies = hobbies;
 	this.saludar = function(){
-		document.write(" <strong>Nombre: </strong> " + this.nombre + " <strong>Apellido:</strong> " + this.apellido + " <strong>Edad:</strong> " + this.edad + " <strong>Hobbiets: </strong> " + this.hobbies )
+		document.write(" <strong>Nombre: </strong> " + this.nombre + " <strong>Apellido:</strong> " + this.apellido + " <strong>Edad:</strong> " + this.edad + " <strong>Hobbiets: </strong><li> " + this.hobbies + "</li>")
 	}
 
 
@@ -21,3 +21,8 @@ Natalia.saludar();
 var Natalia = new Persona("Natalia", "Vivanco", 27, "Leer, Jardinear, Manualidades.")
 Natalia.saludar();
 
+var validarRomina = document.getElementById("Romina");
+var validarPaulina = document.getElementById("Paulina");
+var validarKaterine = document.getElementById("Katerine");
+var validarNatalia = document.getElementById("Natalia");
+var validarNattalia = document.getElementById("Nattalia");
