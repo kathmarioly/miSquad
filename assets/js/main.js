@@ -10,6 +10,7 @@ function Persona(nombre, apellido, edad, hobbies){
 
 
 }
+
 var Romina = new Persona("Romina", "Torres", 31, "Componer, Cantar, Tocar instrumentos.")
 Romina.saludar();
 var Paulina = new Persona("Paulina", "Gonzales", 26, "Video-juegos, Series, Manualidades.")
@@ -21,8 +22,15 @@ Natalia.saludar();
 var Natalia = new Persona("Natalia", "Vivanco", 27, "Leer, Jardinear, Manualidades.")
 Natalia.saludar();
 
-var validarRomina = document.getElementById("Romina");
-var validarPaulina = document.getElementById("Paulina");
-var validarKaterine = document.getElementById("Katerine");
-var validarNatalia = document.getElementById("Natalia");
-var validarNattalia = document.getElementById("Nattalia");
+function contenedor(elements){
+
+contenedor.innerHTML += "<li>" + elements.hobbies + "</li>";
+var validarRomina = document.getElementByClassName("Romina");
+var validarPaulina = document.getElementByClassName("Paulina");
+var validarKaterine = document.getElementByClassName("Katerine");
+var validarNatalia = document.getElementByClassName("Natalia");
+var validarNattalia = document.getElementByClassName("Nattalia");
+
+contenedor[0].innerHTML += "<li>" + Persona + "</li>";
+
+}
